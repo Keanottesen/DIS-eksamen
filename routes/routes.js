@@ -12,9 +12,9 @@ module.exports = (app) => {
   app.delete('/accounts/:id', AccountsController.destroy);
   app.get('/accounts/:id/balance', AccountsController.balance);
 
-  app.get('/client', ClientController.index);
-  app.post('/client', ClientController.store);
-  app.get('/client/:id', ClientController.show);
-  app.put('/client/:id', ClientController.update);
-  app.delete('/client/:id', ClientController.destroy);
+  app.get('/clients', ClientController.index);
+  app.post('/clients', ClientController.store);
+  app.get('/clients/:id', ClientController.show);
+  app.put('/clients/:id', ClientController.update);
+  app.delete('/clients/:id', ClientController.destroy);
 };

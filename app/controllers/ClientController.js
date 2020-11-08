@@ -31,9 +31,9 @@ const { Op } = require("sequelize");
       return res.status(200).send(client)
     },
     async destroy(req, res) {
-      const account = await Client.findOne({where: {id: req.params.id}})
-      await account.destroy();
-      return res.status(200).send(`${req.params.id} is destroyed`)
+      const client = await Client.findOne({where: {id: req.params.id}})
+      await client.destroy();
+      return res.status(200).send(client)
     },
 
 };
