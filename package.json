@@ -5,7 +5,8 @@
   "description": "",
   "scripts": {
     "start:dev": "nodemon ./routes/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seaport": "./node_modules/.bin/seaport"
   },
   "repository": {
     "type": "git",
@@ -24,11 +25,16 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http-proxy": "^1.18.1",
+    "https": "^1.0.0",
     "morgan": "^1.9.1",
     "mysql2": "^2.2.5",
     "password-hash": "^1.2.2",
+    "path": "^0.12.7",
     "pg": "^7.18.2",
     "pg-hstore": "^2.3.3",
+    "seaport": "^2.0.9",
     "sequelize": "^5.21.5"
   },
   "devDependencies": {

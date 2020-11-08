@@ -6,11 +6,11 @@ module.exports = (app) => {
 
   app.get('/accounts', AccountsController.index);
   app.post('/accounts', AccountsController.store);
+  app.put('/accounts/transfer', AccountsController.transfer);
   app.get('/accounts/:id', AccountsController.show);
   app.put('/accounts/:id', AccountsController.update);
   app.delete('/accounts/:id', AccountsController.destroy);
   app.get('/accounts/:id/balance', AccountsController.balance);
-  app.post('/accounts/transfer', AccountsController.transfer);
 
   app.get('/client', ClientController.index);
   app.post('/client', ClientController.store);
