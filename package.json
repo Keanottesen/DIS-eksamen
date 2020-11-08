@@ -6,7 +6,8 @@
   "scripts": {
     "start:dev": "nodemon ./routes/index",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seaport": "./node_modules/.bin/seaport"
+    "seaport": "./node_modules/.bin/seaport",
+    "serve": "./serve.sh"
   },
   "repository": {
     "type": "git",
