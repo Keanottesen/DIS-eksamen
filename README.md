@@ -7,6 +7,9 @@ For at køre dette program skal følgende steps fuldføres i kontinuerlig række
 Denne kommand vil installere relevante dependencies, som applikationen afhænger af for at fungere efter hensigt. Disse relevante dependencies er angivet i package.json
 2. Opret en mysql database ved navn *dis-eksamen*
 Såfremt et anden navn ønskes kan dette konfigureres i ./app/config/config.json
+
+Hvis du ikke har sequelize CLI instaleret på din computer skal du køre `npm install --save-dev sequelize-cli`
+
 3. Kør `sequelize db:migrate`
 Denne kommand vil opsætte din database efter den korrekte datamodel
 4. Kør `npm run serve`
